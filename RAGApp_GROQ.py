@@ -75,7 +75,7 @@ elif page == "Upload PDF":
         )
 
         st.session_state["retriever"] = retriever
-        st.success("PDF indexed successfully.")
+        st.success("PDF Uploaded Successfully.")
 
 # Chat with PDF
 elif page == "Chat with PDF":
