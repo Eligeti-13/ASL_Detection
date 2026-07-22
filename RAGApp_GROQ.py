@@ -91,7 +91,7 @@ elif page == "Chat with PDF":
 
     # Retrieve top-k chunks
     if query:
-        docs = retriever.get_relevant_documents(query)
+        docs = retriever.invoke(query)
         context_text = "\n\n".join(doc.page_content for doc in docs)
 
 
