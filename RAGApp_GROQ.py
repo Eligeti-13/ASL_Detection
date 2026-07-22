@@ -94,13 +94,8 @@ elif page == "Chat with PDF":
         docs = retriever.get_relevant_documents(query)
         context_text = "\n\n".join(doc.page_content for doc in docs)
 
-        print("---RETRIEVED CHUNKS---")
-        for i, doc in enumerate(docs):
-              print(f"Chunk {i+1}:")
-              print(doc.page_content)
-              print("---")
 
-        #prompt for LLaMA
+        #prompt for model
         prompt = f"""
             You are a document-based question answering system.
 
